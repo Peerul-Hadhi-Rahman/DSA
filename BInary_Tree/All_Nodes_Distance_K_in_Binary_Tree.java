@@ -1,9 +1,8 @@
 class Solution {
     Map<TreeNode, TreeNode> parent=new HashMap<>();
-
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
         buildParent(root, null);
-
+        
         Queue<TreeNode> q=new LinkedList<>();
         Set<TreeNode> visited=new HashSet<>();
         
