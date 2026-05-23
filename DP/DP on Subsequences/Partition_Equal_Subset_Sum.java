@@ -26,9 +26,6 @@ RECURSION  TC -> O(2 ^ n) + O(n), SC -> O(n)
     }
 }
 
-  
-
-
 
 MEMOIZATION   TC -> O(n x k) + O(n), SC -> O(n x k) + O(n)
 
@@ -63,6 +60,7 @@ MEMOIZATION   TC -> O(n x k) + O(n), SC -> O(n x k) + O(n)
     }
 }
 
+
 TABULATION   TC -> O(n x k) + O(n), SC -> O(n x k)
 
   class Solution {
@@ -94,8 +92,9 @@ TABULATION   TC -> O(n x k) + O(n), SC -> O(n x k)
         }
        return dp[n-1][target];
     }
+    
 
-  SPACE OPTIMIZATION  TC -> O(n x k) + O(n), SC -> O(k)
+SPACE OPTIMIZATION  TC -> O(n x k) + O(n), SC -> O(k)
 
   class Solution {
     public boolean canPartition(int[] nums) {
