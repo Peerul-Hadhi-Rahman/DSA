@@ -2,7 +2,6 @@ RECURSION  TC -> O(2 ^ n), SC -> O(n)
 
   public class Solution {
     public static boolean subsetSumToK(int n, int k, int arr[]){
-      int[][] dp=new int[n][k+1];
       
       return helper(n-1, k, arr);
     }
